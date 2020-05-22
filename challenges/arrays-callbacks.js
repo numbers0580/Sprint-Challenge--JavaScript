@@ -22,6 +22,14 @@ of each animal. displayNames will be an array of strings, and each string should
 
 */
 const displayNames = [];
+zooAnimals.forEach((animal, index) => {
+  let currentAnimal = {
+    animal_name: zooAnimals[index].animal_name,
+    scientific_name: zooAnimals[index].scientific_name
+  };
+  displayNames.push(currentAnimal);
+});
+console.log("Arrays-Callbacks Request 1:");
 console.log(displayNames);
 
 /* Request 2: .map()
