@@ -40,6 +40,11 @@ each string following this pattern: "jackal, asiatic". Log the resut.
 */
 
 const lowCaseAnimalNames = [];
+zooAnimals.map(function(namesToLower) {
+  let current_animal = namesToLower.animal_name.toLowerCase();
+  lowCaseAnimalNames.push(current_animal);
+});
+console.log("Arrays-Callbacks Request 2:");
 console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
