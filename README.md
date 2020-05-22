@@ -25,14 +25,27 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+    .forEach is similar to a for-loop in that it cycles through every element in the array.
+    .map is used to make some uniform transformation on all elements in the whole array.
+    .forEach would be preferred over .map if you're searching for specific keys or values, whereas .map would be preferred to save time when making uniform augmentations.
 
 2. Explain the difference between a callback and a higher order function.
+    A higher order function is simply a function that can accept another function as a parameter, where a callback function is one that serves as the parameter passed
+    in to the higher order function.
 
 3. What is closure?
+    This is regarding a function that is nested inside another function. Because it's nested, it would have access to the parent function's variables as well as it's
+    own variables.
 
 4. Describe the four rules of the 'this' keyword.
+    W: Windows/Global binding = "this" refers to all of JavaScript
+    I: Implicit binding = "this" refers to an object that precedes the '.' the attribute or method is called from
+    N: New binding = "this" refers to a specific instance of a created object
+    E: Explicit binding = "this" refers to the use of .call or .apply that overrides the parent methods
 
 5. Why do we need super() in an extended class?
+    When a class extends another class, it would have inherited attributes from that extended class.
+    super() is the method called to make those inherited attributes from that parent class accessible within it's own class.
 
 ### Task 1 - Project Set up
 
