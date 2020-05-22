@@ -59,6 +59,12 @@ const lowPopulationAnimals = zooAnimals.filter(function(lessThan5) {
 console.log("Arrays-Callbacks Request 3:");
 console.log(lowPopulationAnimals);
 
+// Stretch. I'll keep the code below, but to anyone grading, I do not deserve 3 Stars for this, since I don't fully understand arrow functions yet.
+// I referred to stackoverflow to get an idea of how to write this. https://stackoverflow.com/questions/32040396/how-to-use-es6-fat-arrow-to-filter-an-array-of-objects
+const lowPopulationArrow = zooAnimals.filter(lessThanFive => lessThanFive.population < 5);
+console.log("Array-Callbacks Request 3 Stretch:");
+console.log(lowPopulationArrow);
+
 /* Request 4: .reduce() 
 
 The zoos need to know their total animal population across the United States. Find the total population from all the zoos using the .reduce() method.
@@ -71,6 +77,13 @@ const populationTotal = zooAnimals.reduce(function(totalInZoos, currentZoo) {
 console.log("Arrays-Callbacks Request 4:");
 console.log(populationTotal);
 
+// Stretch
+// I tried re-creating the stackoverflow code found for .filter to this .reduce, but getting errors
+/*
+const popTotalArrow = zooAnimals.reduce((totalAll, current) => totalAll + current.population);
+console.log("Arrays-Callbacks Request 4 Stretch:");
+console.log(popTotalArrow);
+*/
 
 // ==== Callbacks ====  
 
@@ -119,3 +132,4 @@ Stretch: If you haven't already, convert your array method callbacks into arrow 
 
 */
 
+// Attempted Stretch here, but technically unsuccessful
