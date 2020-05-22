@@ -65,7 +65,10 @@ The zoos need to know their total animal population across the United States. Fi
 Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
 
 */
-const populationTotal = 0;
+const populationTotal = zooAnimals.reduce(function(totalInZoos, currentZoo) {
+  return totalInZoos + currentZoo.population;
+}, 0);
+console.log("Arrays-Callbacks Request 4:");
 console.log(populationTotal);
 
 
